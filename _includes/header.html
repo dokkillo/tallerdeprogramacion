@@ -1,0 +1,27 @@
+<header>
+
+ <nav class="navbar navbar-default navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="{{ site.baseurl }}/index.html">Taller de Programación</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="{{ site.baseurl }}/index.html">Inicio</a></li>  
+          {% for link in site.categories %}
+            <li><a href="{{ site.baseurl }}/categorias/{{ link | first | downcase }}">{{ link | first }}</a></li>
+            {% endfor %}
+                 <li><a href="http://www.h1rd.com">Hacking</a></li>
+                <li><a href="{{ site.baseurl }}/pages/about.html">About</a></li>
+          </ul>  
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+ 
+</header>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+{% include head.html %}
+<body>
+<div id="wrapper">
+    {% include header.html %}    
+    <main id="start">  
+        <div class="articles">
+            <div class="container">
+                <h1>Taller de Programación</h1>
+                <div class="row">
+                    <div class="col-sm-8">
+                     <div class="visible-xs">
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- adaptable -->
+                        <ins class="adsbygoogle"
+                             style="display:block"
+                            data-ad-client="ca-pub-0217877517287584"
+                             data-ad-slot="8327578010"
+                         data-ad-format="auto"></ins>
+                                <script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                        </div>
+                          {{ content }}     
+                    </div>  
+                    <div class="col-sm-4"> 
+                        <div class="row">
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- adaptable -->
+                        <ins class="adsbygoogle"
+                             style="display:block"
+                            data-ad-client="ca-pub-0217877517287584"
+                             data-ad-slot="8327578010"
+                         data-ad-format="auto"></ins>
+                                <script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                        </div>
+                        <div class="row">    
+                            <ul>
+                            {% for tag in site.tags %}
+                             {% assign t = tag | first %}
+                             {% assign posts = tag | last %}
+                              <li>{{t | capitalize  | replace:" ","-" }}  ({{ posts | size }})</li>
+                            {% endfor %}    
+                            </ul>
+                        </div>                         
+                    </div>        
+             </div>
+            </div>             
+        </div> 
+    </main>
+ 
+        {% include paginator.html %}
+    <footer>
+        {% include footer.html %}
+    </footer>
+</div>
+{% if site.disqus %}
+<script defer id="dsq-count-scr" src="//{{ site.disqus }}.disqus.com/count.js" async></script>
+{% endif %}
+<script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script defer type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59341e86a8dc0e6a"></script> 
+</body>
+</html>
