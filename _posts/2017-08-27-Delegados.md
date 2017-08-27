@@ -26,7 +26,7 @@ Para usar un delegado, solo necesitamos usar la keyword delegate, en el siguient
 
 Por ejemplo, el metodo WorkPerformed1, entra perfectamente en la firma del delegado, es decir puede ser usado perfectamente como Handler.
 
-{% highlight c# linenos %}
+{% highlight csharp linenos %}
 
    static void WorkPerformed1(int hoursWorked, int typeWork)
     {
@@ -37,7 +37,7 @@ Por ejemplo, el metodo WorkPerformed1, entra perfectamente en la firma del deleg
 
 Y para instanciar el delegado, lo haremos de esta manera:
 
-{% highlight c# linenos %}
+{% highlight csharp linenos %}
 
    WorkPerformedHandler del1 = new WorkPerformedHandler(WorkPerformed1);
 
@@ -46,7 +46,7 @@ Y para instanciar el delegado, lo haremos de esta manera:
 
 Ahora tendriamos una funcion llamada del1, a la que podriamos pasar unos parametros, y ejecutaria el codigo del metodo WorkPerformed1.
 
-{% highlight c# linenos %}
+{% highlight csharp linenos %}
 
      del1(5, 1);
 
@@ -58,7 +58,7 @@ Podrias pensar, para que usar los delegados con esto, y no llamar directamente a
 
 Ejemplo:
 
-{% highlight c# linenos %}
+{% highlight csharp linenos %}
 
   WorkPerformed1(5, 1);
   WorkPerformed2(5, 1);
@@ -70,13 +70,12 @@ Con los delegados, hariamos lo siguiente:
 
 * Añadiriamos un nuevo delegado que llamaria a un nuevo metodo, recuerda que el nuevo metodo WorkPerformed2, tiene que tener la misma firma que el requiere el delegado.
 
-{% highlight c# linenos %}
+{% highlight csharp linenos %}
     WorkPerformedHandler del2 = new WorkPerformedHandler(WorkPerformed2);
 {% endhighlight %}
 
 * Ya que ambos delegados son del mismo tipo, añadiriamos la llamada del segundo dentro del primero, y cada vez que se llamara al del1, tambien se llamaria al del2, por lo que no haria falta buscar y tocar cada parte de la aplicación solo una.
 
-{% highlight c# linenos %}
+{% highlight csharp linenos %}
     del1 += del2;
 {% endhighlight %}
-
