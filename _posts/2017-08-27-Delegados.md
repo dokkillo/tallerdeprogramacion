@@ -71,11 +71,19 @@ Con los delegados, hariamos lo siguiente:
 * Añadiriamos un nuevo delegado que llamaria a un nuevo metodo, recuerda que el nuevo metodo WorkPerformed2, tiene que tener la misma firma que el requiere el delegado.
 
 {% highlight csharp linenos %}
+
     WorkPerformedHandler del2 = new WorkPerformedHandler(WorkPerformed2);
+
 {% endhighlight %}
 
 * Ya que ambos delegados son del mismo tipo, añadiriamos la llamada del segundo dentro del primero, y cada vez que se llamara al del1, tambien se llamaria al del2, por lo que no haria falta buscar y tocar cada parte de la aplicación solo una.
 
 {% highlight csharp linenos %}
+
     del1 += del2;
+
 {% endhighlight %}
+
+El codigo final seria este:
+
+<script src="https://gist.github.com/dokkillo/572da28a6dfc0f2d2fad2c224756a404.js"></script>
