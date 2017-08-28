@@ -76,7 +76,5 @@ gems:
 
 paginate_path: /pages/page:num
 
-syntax_highligher: rouge
 markdown: kramdown
-kramdown:
-  input: GFM
+highlighter: rouge
