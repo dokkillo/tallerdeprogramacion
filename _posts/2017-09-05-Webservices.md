@@ -40,9 +40,14 @@ Otro termino tambien bastante usado es RESTful, REST suele hacer referencia al "
 
 ## RPC
 
+RPC significa Remote Procedure Call o llamada a procedimiento remoto, y según la wikipedia su definición es: "es un programa que utiliza una computadora para ejecutar código en otra máquina remota sin tener que preocuparse por las comunicaciones entre ambas. El protocolo que se utiliza para esta llamada es un gran avance sobre los sockets de Internet usados hasta el momento. De esta manera el programador no tenía que estar pendiente de las comunicaciones, estando estas encapsuladas dentro de las RPC."
+
+Tiene dos implementaciones principales, XM-RPC y SOAP, ambas usan XML para transmitir los datos.
 
 
 ## ASP.NET WEB API
+
+
 
 ## WCF
 
