@@ -42,6 +42,24 @@ Hay varias maneras de crear un Task:
 
 ``` csharp
 
-     Task task = new Task(() =>{} LongTask());
+     Task task = new Task(() =>{LongTask();});
 	 
 ```
+
+* Usando un delegado
+
+``` csharp
+
+     Task task = new Task(delegate{LongTask();});
+	 
+```
+* O de la manera más directa..
+
+``` csharp
+
+     Task.Factory.StartNew(() => {Console.WriteLine("Hola Mundo!"); });
+	 
+```
+
+
+*El metodo LongTask, es un metodo que tenemos que hace X tarea*
