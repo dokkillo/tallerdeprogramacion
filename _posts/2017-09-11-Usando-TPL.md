@@ -24,5 +24,24 @@ Las tareas y el marco que se crea en torno a ellas proporcionan un amplio conjun
 ## Crear un Task
 
 
-Cuando se crea un Task, se proporciona un delegado de usuario con la tarea que va a ejecutar. Este delegado se puede expresar con un delegado con nombre, un metododo anonommo o una expresion lambda.
+Cuando se crea un Task, se proporciona un delegado de usuario con la tarea que va a ejecutar. Este delegado se puede expresar con un delegado con nombre, un metododo anononimo o una expresion lambda.
 Si el Task devuelve un valor se representara mediante la clase Task<TResult>.
+
+Hay varias maneras de crear un Task:
+
+
+* Con lambda y metodo con nombre
+
+``` csharp
+
+     Task task = new Task(() => LongTask());
+	 
+```
+
+* Lambda y metodo anonimo
+
+``` csharp
+
+     Task task = new Task(() =>{} LongTask());
+	 
+```
