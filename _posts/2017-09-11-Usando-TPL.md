@@ -3,7 +3,7 @@ layout: post
 title:  Usando TPL 
 category: csharp
 comments: true
-description: La biblioteca TPL (Task Parallel Library) es una API ideal para escribir codigo multiproceso, asincróno y paralelo. 
+description: La biblioteca TPL (Task Parallel Library) se basa en el concepto de una tarea, que representa una operación asincrónica. De cierta forma, una tarea recuerda a un subproceso pero en un nivel más alto de abstracción. El término paralelismo de tareas hace referencia a la ejecución simultánea de una o varias tareas independientes. La biblioteca TPL (Task Parallel Library) es una API ideal para escribir codigo multiproceso, asincróno y paralelo. 
 tags:
     - programacion
 ---
