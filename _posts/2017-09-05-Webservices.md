@@ -47,15 +47,27 @@ Tiene dos implementaciones principales, XM-RPC y SOAP, ambas usan XML para trans
 
 ## ASP.NET WEB API
 
-
+ASP.NET WEB API es un framework de .NET que permite crear servicios web, es una plataforma ideal para crear servicios RESTFUL.
 
 ## WCF
 
+Windows Comunication Foundation, es un framework de .NET para hacer aplicaciones orientadas a servicios. 
+
 ## SOA
+
+Service Oriented Arquitecture o Arquitectura Orientada a Servicios, es una forma de pensar en servicios, su construccion y resultados, puedes ver más informacion en los [Principios de SOA](http://www.soa-manifesto.org/default_spanish.html)
+
+SOA consiste en descomponer la lógica de negocio de una organización, en pequeñas unidades de funcionalidad o servicios, con esto conseguimos romper con el concepto de aplicaciones “silo”, donde se creaba una aplicación para resolver una necesidad de negocio concreta, otra para resolver otra, etc… Lo que tendremos será una plataforma transversal formada por un inventario de servicios (o varios) de forma que no solventaremos las necesidades cambiantes del negocio creando nuevas aplicaciones sino combinando diferentes servicios.
 
 ## SOAP
 
+SOAP o Simple Object Accss Protocol, es un protocolo estándar que define cómo dos objetos en diferentes procesos pueden comunicarse por medio de intercambio de datos XML. Este protocolo deriva de un protocolo llamado XML-RPC.
+
+
 ## WSDL
+
+WSDL, Web Services Description Language, describe la interfaz pública a los servicios Web. Está basado en XML y describe la forma de comunicación, es decir, los requisitos del protocolo y los formatos de los mensajes necesarios para interactuar con los servicios listados en su catálogo. Las operaciones y mensajes que soporta se describen en abstracto y se ligan después al protocolo concreto de red y al formato del mensaje.
+
 
 
 
